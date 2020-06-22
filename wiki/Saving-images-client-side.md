@@ -1,0 +1,1 @@
+Type `:screenshot --selector .item` in Firefox console to save the Map as an image file!
