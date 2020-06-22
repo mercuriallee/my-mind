@@ -1,0 +1,33 @@
+<p><a href="https://mercurial.top/my-mind">My Mind</a> supports saving and loading to a number of storage backends with different feature sets. There is a dedicated UI pane for these operations, available via the <strong>Save/Save as/Load</strong> buttons (or <strong>Ctrl+S/Ctrl+Shift+S/Ctrl+O</strong> keys).</p>
+
+<p>Once you save or load a map, the currently used backend name is stored in the URL, as well as the map id. This permalink can be used to link to a saved map.</p>
+
+<h3>File formats</h3>
+
+<p>Some storage backends allow working with multiple file formats: native MyMind format, MindMup JSON, FreeMind XML and MindMap Architect XML. These can be both loaded and saved.</p>
+
+<p>You can save your map in a simple, tab-indented plaintext file. Re-loading this file works, but will obviously result in loss of certain metadata.</p>
+
+<p>The &quot;Save&quot; dialog also allows you to save the map as an image, although it is now preferred to create the image locally using Firefox Devtools.</p>
+
+<h3>Browser storage</h3>
+
+<p>Browsers storage (AKA WebStorage) is a fast way to store maps locally. These maps cannot be shared for obvious reasons.</p>
+
+<h3>Firebase</h3>
+
+<p>Maps can be stored in a <a href="https://www.firebaseio.com">Firebase</a> database. It is up to the user to create and configure a Firebase name, as well as any optional authentication methods.</p>
+
+<p>Maps in Firebase are synced in real-time, which means that multiple users can edit them and their changes will be auto-propagated to all collaborators.</p>
+
+<h3>Google Drive</h3>
+
+<p>If you choose this backend, you will be prompted to log-in to Google and allow My Mind to access your GDrive files. Saved maps can be then opened directly from the Google Drive UI; it is also possible to create new maps directly from the Drive.</p>
+
+<h3>File</h3>
+
+<p>Local filesystem can be accessed for both reading and writing maps. This backend does not generate permalinks, as it is not (yet?) possible to automatically read local files from within a web browser.</p>
+
+<h3>Generic WebDAV</h3>
+
+<p>A generic REST API can be accessed (via GET/POST requests) using this backend. Just specify an URL for HTTP requests. </p>
