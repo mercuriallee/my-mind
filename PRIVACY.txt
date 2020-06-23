@@ -3,6 +3,12 @@ Privacy Policy
 
 This application can be configured to use Google Drive as a storage option for Mind Map design files. If you decide to do so, please note that My Mind will have a theoretical access to all your Google Drive files.
 
+When you choose to use the features of SAVEING/LOADING WITH Google Drive for the first time, we will request you to provide the Google Drive account to link to. 
+
+When choose to SAVE TO Google Drive, this application will create a backup file of your mind map, and save to the location you specified of your Google Drive.
+
+When choose to LOAD FROM Google Drive, this application will load the backup file you specified from your Google Drive.
+
 This application, however, only saves/loads those files that are explicitely requested by the user via My Mind's User Interface.
 
 This application is not accessing, reading, writing, modifying or deleting other kinds of data. In particular, user data and metadata (information about the user logged into the Google ecosystem) is never accessed.
