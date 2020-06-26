@@ -3685,7 +3685,7 @@ MM.Backend.GDrive._load = function(id) {
 	request.execute(function(response) {
 		if (response && response.downloadUrl) {
 			var xhr = new XMLHttpRequest();
-			xhr.open("get", response.downloadUrl, true);
+			xhr.open("get", response.downloadUrl.replace('content.google','www.google'), true);
 			xhr.setRequestHeader("Authorization", "Bearer " + gapi.auth.getToken().access_token);
 			Promise.send(xhr).then(
 				function(xhr) { promise.fulfill({data:xhr.responseText, name:response.title, mime:response.mimeType}); },
